@@ -1,0 +1,182 @@
+/* *{
+    margin:0;padding:0;box-sizing:border-box;font-family:Arial
+ }
+body
+{
+    background:#f4f4f4
+}
+nav
+{
+    display:flex;justify-content:space-between;padding:20px;background:#111;color:white
+}
+ul
+{
+    display:flex;gap:15px;list-style:none
+}
+.hero{
+    height:60vh;display:flex;flex-direction:column;
+    justify-content:center;align-items:center;
+    background:linear-gradient(135deg,#2193b0,#6dd5ed);color:#fff
+    }
+section
+{
+    padding:40px;background:#fff;margin:20px;border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1)
+}
+button
+{
+    padding:10px
+}
+footer
+{
+    text-align:center;padding:20px;background:black;color:#fff
+} */
+ 
+*{
+    margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;scroll-behavior:smooth
+ }
+body
+{
+    background:#f4f4f4
+}
+nav
+{
+    display:flex;justify-content:space-between;align-items:center;background:#111;color:#fff;padding:15px 40px;position:sticky;top:0
+}
+nav ul
+{
+    display:flex;gap:20px;list-style:none
+}
+nav a
+{
+    text-decoration:none;color:#fff
+}
+.hero
+{
+    height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;
+    background:linear-gradient(135deg,#2193b0,#6dd5ed);color:white;text-align:center
+}
+/* .hero
+{
+    height:100vh;display:flex;justify-content:center;align-items:center;
+    background:linear-gradient(135deg,#0ea5e9,#7c3aed)} */
+.hero-box
+{
+    padding:40px;background:rgba(255,255,255,.1);border-radius:20px;
+    backdrop-filter:blur(12px);animation:float 3s infinite alternate
+}
+.hero img
+{
+     width: 150px;
+    height: 150px;
+    border-radius:50%;
+    margin-bottom:20px;
+    object-fit:cover;
+}
+/* .btn
+{
+    background:#fff;color:#000;padding:10px 20px;text-decoration:none;
+    border-radius:5px;margin-top:10px
+} */
+.btn
+{ 
+   display:inline-block;margin-top:15px;padding:12px 22px;background:#fff;
+   color:#000;text-decoration:none;border-radius:8px
+}
+section{padding:60px 10%}
+
+section
+{
+    padding:50px 10%;background:white;margin:20px;border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.15)
+}
+.grid
+{ 
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px
+}
+.card
+{
+    padding:20px;background:#eee;border-radius:8px;transition:.3s
+}
+.card:hover
+{
+    transform:translateY(-8px)
+}
+table
+{
+    width:100%;border-collapse:collapse
+}
+table,th,td
+{
+    border:1px solid #333
+}
+th,td
+{
+    padding:10px;text-align:center
+}
+tr:hover {background-color: #D6EEEE;}
+form
+{
+    display:flex;flex-direction:column;gap:10px;
+}
+input,textarea,button{padding:12px}
+button
+{
+    background:#2193b0;color:#fff;border:none;
+    height: 30px;
+    width: 60px;;
+}
+
+ #DirContact {
+  display: flex;              
+  flex-direction: column;     
+  align-items: center;        /* horizontal center */
+  justify-content: center;    /* vertical center (अगर height दी जाए) */
+  gap: 12px;                  /* phone और email के बीच space */
+}
+
+.contact-link {
+  display: flex;              /* icon + text side by side */
+  align-items: center;        /* vertical center */
+  gap: 8px;                   /* icon और text के बीच space */
+  text-decoration: none;      /* underline हटाना */
+  color: #000;                /* text का color */
+  font-size: 16px;            /* readable size */
+}
+
+.contact-link img {
+  width: 25px;                /* छोटा icon */
+  height: 25px;
+  border-radius: 50%;         /* गोल icon */
+  animation: shine 2s infinite; /* shine effect */
+}
+
+@keyframes shine {
+  0%   { filter: brightness(1); }
+  50%  { filter: brightness(1.8); }
+  100% { filter: brightness(1); }
+}
+
+.contact-link .text {
+  font-weight: bold;
+}
+
+
+
+footer{
+    text-align:center;background:#111;color:#fff;padding:20px
+}
+footer .link a {
+    color: #fff;
+    /* text-decoration: none; */
+    margin: 0 10px;
+}
+@media(max-width:768px)
+{
+nav{flex-direction:column
+}
+nav ul
+{
+    flex-direction:column;text-align:center
+}
+}
